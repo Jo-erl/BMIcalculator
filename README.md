@@ -17,4 +17,4 @@ Contributions to the BMI Calculator are more than welcome! If you encounter any 
 <h1>License</h1>
 This project is licensed under the MIT License.<br><br>
 
-<i>Enjoy using the 3D Carousel in your projects! If you have any questions or need assistance, please don't hesitate to reach out.</i>
+<i>Enjoy using the BMI Calculator in your projects! If you have any questions or need assistance, please don't hesitate to reach out.</i>
