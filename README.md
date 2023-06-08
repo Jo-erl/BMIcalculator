@@ -1,5 +1,5 @@
 <h1>BMI Calculator</h1>
-<a href="[https://https://jo-erl.github.io/BMIcalculator/">Demo Link</a>
+<a href="https://jo-erl.github.io/BMIcalculator/">Demo Link</a><br><br>
 
 
 The BMI Calculator is a simple tool that allows users to calculate their Body Mass Index (BMI) based on their height and weight. This GitHub repository provides a ready-to-use solution for integrating the BMI Calculator into your web projects.
@@ -12,7 +12,7 @@ Features
 <b>Responsive Design:</b> The BMI Calculator is designed to be responsive, ensuring a consistent experience across various devices and screen sizes.
   
 <h1>Contributing</h1>
-Contributions to the BMI Calculator are more than welcome! If you encounter any issues, have suggestions for improvements, or would like to add new features, please feel free to submit a pull request.<br>
+Contributions to the BMI Calculator are more than welcome! If you encounter any issues, have suggestions for improvements, or would like to add new features, please feel free to submit a pull request.<br><br>
 
 <h1>License</h1>
 This project is licensed under the MIT License.<br><br>
