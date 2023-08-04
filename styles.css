@@ -110,6 +110,7 @@ button {
 }
 
 /*=============== FOOTER2 ===============*/
+
 .footer2 {
   width: 100%;
   text-align: center;
@@ -122,7 +123,9 @@ button {
   left: 0; 
   right: 0; 
 }
-
+.footer2 p{
+  color: #aaaaaa;
+}
 
 
   /*# sourceMappingURL=styles.css.map */
