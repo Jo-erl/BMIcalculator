@@ -42,11 +42,6 @@ li {
   color: #252525;
 }
 /*=======================================================*/
-p {
-  color: #5a5a5a;
-  text-align: left;
-}
-/*=======================================================*/
 form {
   max-width: 350px;
   margin: 0 auto;
@@ -107,13 +102,14 @@ button {
 /*=======================================================*/
 .notes p {
   margin-bottom: 10px;
-  text-align: justify;
+  text-align: left;
   font-size: 16px;
+  color: #5a5a5a;
 }
 /*=======================================================*/
 .notes ul {
   margin-bottom: 10px;
-  text-align: justify;
+  text-align: left;
   font-size: 16px;
 }
 /*=======================================================*/
