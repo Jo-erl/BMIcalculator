@@ -1,116 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-EDGE" />
+    <title>BMI Calculator by JoErl</title>
+    <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no shrink-to-fit=no"
     />
-    <meta name="description" content="" />
-    <meta name="keywords" content="html, css, javascript" />
+    <meta name="description" content="BMI Calculator by JoErl" />
+    <meta name="keywords" content="html, css, js" />
     <meta name="author" content="Joel Anang" />
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
   </head>
   <body>
     <!--=======================================================-->
     <div class="container">
-      <div class="calculator">
-        <!--=======================================================-->
-        <form>
-          <div class="display">
-            <input type="text" name="display" />
-          </div>
-          <!--=======================================================-->
-          <div>
-            <input
-              type="button"
-              value="AC"
-              onclick="display.value = '' "
-              class="operator"
-            />
-            <input
-              type="button"
-              value="DE"
-              onclick="display.value = display.value.toString(0,-1)"
-              class="operator"
-            />
-            <input
-              type="button"
-              value="."
-              onclick="display.value += '.' "
-              class="operator"
-            />
-            <input
-              type="button"
-              value="/"
-              onclick="display.value += '/' "
-              class="operator"
-            />
-          </div>
-          <!--=======================================================-->
-          <div>
-            <input type="button" value="7" onclick="display.value += '7' " />
-            <input type="button" value="8" onclick="display.value += '8' " />
-            <input type="button" value="9" onclick="display.value += '9' " />
-            <input
-              type="button"
-              value="*"
-              onclick="display.value += '*' "
-              class="operator"
-            />
-          </div>
-          <!--=======================================================-->
-          <div>
-            <input type="button" value="4" onclick="display.value += '4' " />
-            <input type="button" value="5" onclick="display.value += '5' " />
-            <input type="button" value="6" onclick="display.value += '6' " />
-            <input
-              type="button"
-              value="-"
-              onclick="display.value += '-' "
-              class="operator"
-            />
-          </div>
-          <!--=======================================================-->
-          <div>
-            <input type="button" value="1" onclick="display.value += '1' " />
-            <input type="button" value="2" onclick="display.value += '2' " />
-            <input type="button" value="3" onclick="display.value += '3' " />
-            <input
-              type="button"
-              value="+"
-              onclick="display.value += '+' "
-              class="operator"
-            />
-          </div>
-          <!--=======================================================-->
-          <div>
-            <input type="button" value="00" onclick="display.value += '00' " />
-            <input type="button" value="0" onclick="display.value += '0' " />
-            <input
-              type="button"
-              value="="
-              onclick="display.value = eval(display.value)"
-              class="operator"
-              id="equal"
-            />
-          </div>
-        </form>
-        <!--=======================================================-->
+      <h1>BMI Calculator</h1>
+      <!--=======================================================-->
+      <div class="input-group">
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" placeholder="Enter height" />
+      </div>
+      <!--=======================================================-->
+      <div class="input-group">
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" placeholder="Enter weight" />
+      </div>
+      <!--=======================================================-->
+      <button id="calculate">Calculate BMI</button>
+      <!--=======================================================-->
+      <div id="result" class="hidden">
+        <h2>Your BMI: <span id="bmi-value"></span></h2>
+        <p id="bmi-category"></p>
       </div>
     </div>
+    <!--=======================================================-->
+    <script src="script.js"></script>
     <!--=======================================================-->
   </body>
 </html>

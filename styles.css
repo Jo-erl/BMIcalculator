@@ -1,0 +1,114 @@
+/*FONTS*/
+@font-face {
+  font-family: "MTNBrighterSans";
+  src: url("ttf/MTNBrighterSans-Regular.ttf") format("truetype");
+  font-weight: 400; /* Regular weight */
+}
+
+@font-face {
+  font-family: "MTNBrighterSans";
+  src: url("ttf/MTNBrighterSans-Medium.ttf") format("truetype");
+  font-weight: 500; /* Medium weight */
+}
+
+@font-face {
+  font-family: "MTNBrighterSans";
+  src: url("ttf/MTNBrighterSans-ExtraBold.ttf") format("truetype");
+  font-weight: 700; /* Extra weight */
+}
+/*=======================================================*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*=======================================================*/
+body {
+  font-family: "MTNBrighterSans", sans-serif;
+  background-color: #e0e5ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+/*=======================================================*/
+.container {
+  background-color: #e0e5ec;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px #b8bec5, -10px -10px 20px #ffffff;
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+}
+/*=======================================================*/
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+/*=======================================================*/
+.input-group {
+  margin-bottom: 1.5rem;
+}
+/*=======================================================*/
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #34495e;
+}
+/*=======================================================*/
+input {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #e0e5ec;
+  box-shadow: inset 5px 5px 10px #b8bec5, inset -5px -5px 10px #ffffff;
+}
+/*=======================================================*/
+button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #e0e5ec;
+  color: #2c3e50;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 5px 5px 10px #b8bec5, -5px -5px 10px #ffffff;
+}
+/*=======================================================*/
+button:hover {
+  box-shadow: 2px 2px 5px #b8bec5, -2px -2px 5px #ffffff;
+}
+/*=======================================================*/
+button:active {
+  box-shadow: inset 2px 2px 5px #b8bec5, inset -2px -2px 5px #ffffff;
+}
+/*=======================================================*/
+#result {
+  margin-top: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: inset 5px 5px 10px #b8bec5, inset -5px -5px 10px #ffffff;
+}
+/*=======================================================*/
+#result.hidden {
+  display: none;
+}
+/*=======================================================*/
+#bmi-value {
+  font-weight: bold;
+  color: #2c3e50;
+}
+/*=======================================================*/
+#bmi-category {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #34495e;
+}
+/*=======================================================*/

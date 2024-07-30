@@ -1,40 +1,37 @@
-window.onload = () => {
-  let button = document.querySelector("#btn");
+document.addEventListener("DOMContentLoaded", () => {
+  const heightInput = document.getElementById("height");
+  const weightInput = document.getElementById("weight");
+  const calculateButton = document.getElementById("calculate");
+  const result = document.getElementById("result");
+  const bmiValue = document.getElementById("bmi-value");
+  const bmiCategory = document.getElementById("bmi-category");
 
-  // Function for calculating BMI
-  button.addEventListener("click", calculateBMI);
-};
+  calculateButton.addEventListener("click", () => {
+    const height = parseFloat(heightInput.value);
+    const weight = parseFloat(weightInput.value);
 
-function calculateBMI() {
-  /* Getting input from user into height variable.
-        Input is string so typecasting is necessary. */
-  let height = parseInt(document.querySelector("#height").value);
+    if (isNaN(height) || isNaN(weight) || height <= 0 || weight <= 0) {
+      alert("Please enter valid height and weight values.");
+      return;
+    }
 
-  /* Getting input from user into weight variable.
-        Input is string so typecasting is necessary.*/
-  let weight = parseInt(document.querySelector("#weight").value);
+    const bmi = calculateBMI(height, weight);
+    const category = getBMICategory(bmi);
 
-  let result = document.querySelector("#result");
+    bmiValue.textContent = bmi.toFixed(1);
+    bmiCategory.textContent = `Category: ${category}`;
+    result.classList.remove("hidden");
+  });
 
-  // Checking if the user provided a proper value or not
-  if (height === "" || isNaN(height))
-    result.innerHTML = "Provide a valid Height!";
-  else if (weight === "" || isNaN(weight))
-    result.innerHTML = "Provide a valid Weight!";
-  // If both inputs are valid, calculate the BMI
-  else {
-    // Fixing up to 2 decimal places
-    let bmi = (weight / ((height * height) / 10000)).toFixed(1);
-
-    let category;
-
-    // Determine the BMI category
-    if (bmi < 18.5) category = "severely underweight";
-    else if (bmi >= 18.5 && bmi < 25) category = "normal";
-    else if (bmi >= 25 && bmi < 30) category = "overweight";
-    else category = "obese";
-
-    // Display the BMI result with category
-    result.innerHTML = `Your Body Mass Index is ${bmi}. This is considered ${category}.`;
+  function calculateBMI(height, weight) {
+    const heightInMeters = height / 100;
+    return weight / (heightInMeters * heightInMeters);
   }
-}
+
+  function getBMICategory(bmi) {
+    if (bmi < 18.5) return "Underweight";
+    if (bmi < 25) return "Normal weight";
+    if (bmi < 30) return "Overweight";
+    return "Obese";
+  }
+});
