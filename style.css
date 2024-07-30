@@ -1,0 +1,97 @@
+/*FONTS*/
+@font-face {
+  font-family: "MTNBrighterSans";
+  src: url("ttf/MTNBrighterSans-Regular.ttf") format("truetype");
+  font-weight: 400; /* Regular weight */
+}
+
+@font-face {
+  font-family: "MTNBrighterSans";
+  src: url("ttf/MTNBrighterSans-Medium.ttf") format("truetype");
+  font-weight: 500; /* Medium weight */
+}
+
+@font-face {
+  font-family: "MTNBrighterSans";
+  src: url("ttf/MTNBrighterSans-ExtraBold.ttf") format("truetype");
+  font-weight: 700; /* Extra weight */
+}
+/*=======================================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "MTNBrighterSans", sans-serif;
+  font-weight: 700 !important;
+}
+/*=======================================================*/
+body {
+  background: #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/*=======================================================*/
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*=======================================================*/
+.calculator {
+  background: #ebebeb; /* Matches body background */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+}
+/*=======================================================*/
+.calculator form input {
+  border: 0;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.5),
+    8px 8px 15px rgba(0, 0, 0, 0.1);
+  background: #ebebeb;
+  color: #333;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 18px;
+  transition: box-shadow 0.3s ease;
+}
+/*=======================================================*/
+.calculator form input:hover {
+  box-shadow: -4px -4px 8px rgba(255, 255, 255, 0.5),
+    4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+/*=======================================================*/
+.calculator form input:active {
+  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+    inset 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+/*=======================================================*/
+form .display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+/*=======================================================*/
+form .display input {
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  box-shadow: none;
+  background: #ebebeb; /* Matches body background */
+  border: none;
+  color: #333;
+}
+/*=======================================================*/
+#equal {
+  width: 145px;
+}
+/*=======================================================*/
+form input.operator {
+  color: #ff0000;
+}
