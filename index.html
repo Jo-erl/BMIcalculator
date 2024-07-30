@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no shrink-to-fit=no"
-    />
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no shrink-to-fit=no" />
     <meta name="author" content="Joel Anang" />
     <meta name="description" content="BMI Calculator by JoErl" />
     <meta name="keywords" content="Body, mass, index, BMI" />
@@ -16,9 +15,9 @@
     <script src="script.js"></script>
     <title>BMI Calculator by JoErl</title>
   </head>
-
+  <body>
+    <main>
     <h1>Body Mass Index Calculator</h1>
-
     <form id="bmiForm">
       <div class="input-group">
         <label for="weight">Weight (kg):</label>
@@ -33,16 +32,18 @@
       <button type="button" id="btn">Calculate BMI</button>
     </form>
     <div id="result"></div><br>
-
-    <div id="notes">
+    <!--=======================================================-->
+    <div class="notes">
       <h3>What is Body Mass Index (BMI)?</h3>
       <p>
-        &nbsp;&nbsp;&nbsp;&nbsp;BMI is a measure that evaluates an individual's body composition by
+        &nbsp;&nbsp;&nbsp;&nbsp;BMI is a measure that evaluates an individual's
+        body composition by
         considering their weight and height. Its purpose is to provide an
         estimation of tissue mass and determine if a person has a suitable body
         weight relative to their height. The calculated BMI value is used to
         classify individuals into categories such as underweight, normal weight,
-        overweight, or obese, based on predetermined ranges. <br>&nbsp;&nbsp;&nbsp;&nbsp;These ranges can
+        overweight, or obese, based on predetermined ranges.
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;These ranges can
         vary depending on factors like geographical region and age, and may
         include subcategories like severely underweight or very severely obese.
         It's important to note that being underweight or overweight can have
@@ -51,43 +52,44 @@
         further assessment or actions are necessary.
       </p>
     </div>
-
-
-    <div id="notes">
-    <h3>BMI table (Age 20 or older)</h3>
-      <p>According to the Centers for Disease Control and Prevention (CDC) growth charts:</p>
+    <!--=======================================================-->
+    <div class="notes">
+      <h3>BMI table (Age 20 or older)</h3>
+      <p>According to the Centers for Disease Control and Prevention (CDC)
+        growth charts:</p>
       <table>
         <thead>
-            <tr>
-              <th>BMI Range</th>
-              <th>Classification</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Less than 18.5</td>
-              <td>Underweight</td>
-            </tr>
-            <tr>
-              <td>18.5 to 24.9</td>
-              <td>Healthy Weight</td>
-            </tr>
-            <tr>
-              <td>25.0 to 29.9</td>
-              <td>Overweight</td>
-            </tr>
-            <tr>
-              <td>30.0 and above</td>
-              <td>Obese</td>
-            </tr>
-          </tbody>
-        </table>
+          <tr>
+            <th>BMI Range</th>
+            <th>Classification</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Less than 18.5</td>
+            <td>Underweight</td>
+          </tr>
+          <tr>
+            <td>18.5 to 24.9</td>
+            <td>Healthy Weight</td>
+          </tr>
+          <tr>
+            <td>25.0 to 29.9</td>
+            <td>Overweight</td>
+          </tr>
+          <tr>
+            <td>30.0 and above</td>
+            <td>Obese</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-
-      <div id="notes">
-        <table>
+    <!--=======================================================-->
+    <div class="notes">
+      <table>
         <h3>BMI Table for Children and Teens (Age 2 to 19)</h3>
-        <p>According to the Centers for Disease Control and Prevention (CDC) growth charts:</p>
+        <p>According to the Centers for Disease Control and Prevention (CDC)
+          growth charts:</p>
 
         <thead>
           <tr>
@@ -178,111 +180,274 @@
             <td>Obese</td>
           </tr>
         </tbody>
-    </table>
-      </div>
-
-
-      <div id="notes">
+      </table>
+    </div>
+    <!--=======================================================-->
+    <div class="notes">
       <h3>Risks associated with being underweight</h3>
       <p>
-        According to the Centers for Disease Control and Prevention (CDC), being underweight can be associated with several health risks. Some of the risks include:<br><br>
+        According to the Centers for Disease Control and Prevention (CDC), being
+        underweight can be associated with several health risks. Some of the
+        risks include:<br><br>
 
-        <b>Nutritional deficiencies:</b> Underweight individuals may not be consuming enough essential nutrients, vitamins, and minerals, which can lead to deficiencies and weaken the immune system.<br><br>
+        <b>Nutritional deficiencies:</b> Underweight individuals may not be
+        consuming enough essential nutrients, vitamins, and minerals, which can
+        lead to deficiencies and weaken the immune system.<br><br>
 
-   <b>Weakened immune system:</b>  Insufficient body weight can compromise the immune system, making underweight individuals more susceptible to infections, illnesses, and delayed healing.<br><br>
+        <b>Weakened immune system:</b> Insufficient body weight can compromise
+        the immune system, making underweight individuals more susceptible to
+        infections, illnesses, and delayed healing.<br><br>
 
-    <b>Malnutrition:</b> Underweight individuals may experience malnutrition, which can negatively impact overall health, growth, and development.<br><br>
+        <b>Malnutrition:</b> Underweight individuals may experience
+        malnutrition, which can negatively impact overall health, growth, and
+        development.<br><br>
 
-    <b>Reduced muscle mass and strength:</b> Inadequate body weight can result in loss of muscle mass and strength, leading to reduced physical performance and increased risk of injuries.<br><br>
+        <b>Reduced muscle mass and strength:</b> Inadequate body weight can
+        result in loss of muscle mass and strength, leading to reduced physical
+        performance and increased risk of injuries.<br><br>
 
-    <b>Hormonal imbalances:</b> Being underweight can disrupt hormonal balance in the body, affecting reproductive health and leading to irregular menstrual cycles in women.<br><br>
+        <b>Hormonal imbalances:</b> Being underweight can disrupt hormonal
+        balance in the body, affecting reproductive health and leading to
+        irregular menstrual cycles in women.<br><br>
 
-    <b>Increased risk of osteoporosis:</b> Insufficient body weight can contribute to lower bone density, increasing the risk of developing osteoporosis and fractures later in life.<br><br>
+        <b>Increased risk of osteoporosis:</b> Insufficient body weight can
+        contribute to lower bone density, increasing the risk of developing
+        osteoporosis and fractures later in life.<br><br>
 
-    <b>Impaired growth and development:</b> In children and adolescents, being underweight can hinder proper growth and development, affecting physical, cognitive, and emotional well-being.<br><br>
+        <b>Impaired growth and development:</b> In children and adolescents,
+        being underweight can hinder proper growth and development, affecting
+        physical, cognitive, and emotional well-being.<br><br>
 
-    <p><i style="color: rgb(59, 59, 59);">It's important to note that the specific risks associated with being underweight may vary depending on individual circumstances and underlying health conditions. It is advisable to consult with a healthcare professional for personalized guidance and support if you have concerns about being underweight.</i></p>
-      </div>
-
-      <div id="notes">
-        <h3>Risks associated with being overweight</h3>
-        <p>
-          According to the Centers for Disease Control and Prevention (CDC), there are several health risks associated with being overweight. These risks include:<br><br>
-  
-          <b>Cardiovascular diseases:</b> Being overweight increases the risk of developing various cardiovascular diseases such as heart disease, high blood pressure, and stroke.<br><br>
-  
-     <b>Type 2 diabetes:</b>  Excess weight, especially around the waist, is a significant risk factor for developing type 2 diabetes. The body's ability to use insulin effectively is reduced in overweight individuals, leading to high blood sugar levels.<br><br>
-  
-      <b>Metabolic syndrome:</b>  Metabolic syndrome is a cluster of conditions that occur together, including high blood pressure, high blood sugar, abnormal cholesterol levels, and excess abdominal fat. Being overweight increases the risk of developing metabolic syndrome.<br><br>
-  
-      <b>Sleep apnea:</b>  Obesity is a major risk factor for sleep apnea, a condition in which breathing repeatedly stops and starts during sleep. Sleep apnea can lead to daytime sleepiness, high blood pressure, and other health complications.<br><br>
-  
-      <b>Certain types of cancer:</b> Being overweight or obese is associated with an increased risk of developing several types of cancer, including breast, colon, endometrial, kidney, and pancreatic cancer.<br><br>
-  
-      <b>Osteoarthritis:</b> Excess weight puts additional stress on the joints, particularly the knees and hips, leading to the development or worsening of osteoarthritis. This can result in pain, stiffness, and reduced mobility.<br><br>
-  
-      <b>Mental health issues:</b> Overweight individuals may experience mental health issues such as low self-esteem, depression, and body image dissatisfaction, which can impact their overall well-being.<br><br>
-  
-      <p><i style="color: rgb(59, 59, 59);">It's important to note that these risks can vary based on individual factors such as genetics, lifestyle, and overall health. Maintaining a healthy weight through a balanced diet, regular physical activity, and lifestyle modifications can help reduce the risks associated with being overweight.</i></p>
-        </div>
-
-      <div id="notes">
-        <h3>Limitations of BMI</h3>
+        <p><i style="color: rgb(59, 59, 59);">It's important to note that the
+            specific risks associated with being underweight may vary depending
+            on individual circumstances and underlying health conditions. It is
+            advisable to consult with a healthcare professional for personalized
+            guidance and support if you have concerns about being
+            underweight.</i>
+        </p>
+      </p>
+    </div>
+    <!--=======================================================-->
+    <div class="notes">
+      <h3>Risks associated with being overweight</h3>
       <p>
-        While BMI is widely used and valuable in assessing healthy body weight, it does come with certain limitations. BMI is an estimation that doesn't account for body composition. Factors such as muscle, bone mass, and fat distribution vary among individuals, making it important to consider other measurements alongside BMI when determining a person's healthy body weight.<br><br>
+        According to the Centers for Disease Control and Prevention (CDC), there
+        are several health risks associated with being overweight. These risks
+        include:<br><br>
 
-In adults, BMI may not provide complete accuracy as it measures overall body weight rather than distinguishing between excess body fat and other components. Age, sex, ethnicity, muscle mass, body fat, and activity level are factors that influence BMI. For instance, an older individual who appears to have a healthy weight may have considerable excess body fat despite not being heavy due to a sedentary lifestyle. On the other hand, a younger person with a higher muscle composition at the same BMI would be considered healthy. Athletes, especially bodybuilders, may have higher BMIs due to their significant muscle mass despite being categorized as overweight. According to the CDC:<br>
+        <b>Cardiovascular diseases:</b> Being overweight increases the risk of
+        developing various cardiovascular diseases such as heart disease, high
+        blood pressure, and stroke.<br><br>
 
-<ul><p>
-    <li> Older adults tend to have more body fat than younger adults with the same BMI.</li>
-    <li>Women generally have more body fat than men at an equivalent BMI.</li>
-    <li> Muscular individuals and highly trained athletes may have higher BMIs due to their substantial muscle mass.</li></p>
-</ul>
+        <b>Type 2 diabetes:</b> Excess weight, especially around the waist, is a
+        significant risk factor for developing type 2 diabetes. The body's
+        ability to use insulin effectively is reduced in overweight individuals,
+        leading to high blood sugar levels.<br><br>
 
-<p>Similar limitations apply to BMI calculations for children and adolescents. Factors like height and sexual maturation can influence BMI and body fat in this population. BMI is a better indicator of excess body fat for obese children, while for overweight children, their BMI could be influenced by increased levels of fat or fat-free mass (including water, organs, muscle, etc.). In thin children, the difference in BMI can also be attributed to fat-free mass.</p>
+        <b>Metabolic syndrome:</b> Metabolic syndrome is a cluster of conditions
+        that occur together, including high blood pressure, high blood sugar,
+        abnormal cholesterol levels, and excess abdominal fat. Being overweight
+        increases the risk of developing metabolic syndrome.<br><br>
 
+        <b>Sleep apnea:</b> Obesity is a major risk factor for sleep apnea, a
+        condition in which breathing repeatedly stops and starts during sleep.
+        Sleep apnea can lead to daytime sleepiness, high blood pressure, and
+        other health complications.<br><br>
 
-<p>However, it's worth noting that BMI is reasonably indicative of body fat for approximately 90-95% of the population and can be used in conjunction with other measures to determine a person's healthy body weight effectively.</p>
-      </div> 
+        <b>Certain types of cancer:</b> Being overweight or obese is associated
+        with an increased risk of developing several types of cancer, including
+        breast, colon, endometrial, kidney, and pancreatic cancer.<br><br>
 
-      <div id="notes">
-        <h3>BMI formula</h3>
+        <b>Osteoarthritis:</b> Excess weight puts additional stress on the
+        joints, particularly the knees and hips, leading to the development or
+        worsening of osteoarthritis. This can result in pain, stiffness, and
+        reduced mobility.<br><br>
+
+        <b>Mental health issues:</b> Overweight individuals may experience
+        mental health issues such as low self-esteem, depression, and body image
+        dissatisfaction, which can impact their overall well-being.<br><br>
+
+        <p><i style="color: rgb(59, 59, 59);">It's important to note that these
+            risks can vary based on individual factors such as genetics,
+            lifestyle, and overall health. Maintaining a healthy weight through
+            a balanced diet, regular physical activity, and lifestyle
+            modifications can help reduce the risks associated with being
+            overweight.</i></p>
+      </p>
+    </div>
+    <!--=======================================================-->
+    <div class="notes">
+      <h3>Limitations of BMI</h3>
+      <p>
+        While BMI is widely used and valuable in assessing healthy body weight,
+        it does come with certain limitations. BMI is an estimation that doesn't
+        account for body composition. Factors such as muscle, bone mass, and fat
+        distribution vary among individuals, making it important to consider
+        other measurements alongside BMI when determining a person's healthy
+        body weight.<br><br>
+
+        In adults, BMI may not provide complete accuracy as it measures overall
+        body weight rather than distinguishing between excess body fat and other
+        components. Age, sex, ethnicity, muscle mass, body fat, and activity
+        level are factors that influence BMI. For instance, an older individual
+        who appears to have a healthy weight may have considerable excess body
+        fat despite not being heavy due to a sedentary lifestyle. On the other
+        hand, a younger person with a higher muscle composition at the same BMI
+        would be considered healthy. Athletes, especially bodybuilders, may have
+        higher BMIs due to their significant muscle mass despite being
+        categorized as overweight. According to the CDC:<br>
+
+        <ul><p>
+            <li> Older adults tend to have more body fat than younger adults
+              with the same BMI.</li>
+            <li>Women generally have more body fat than men at an equivalent
+              BMI.</li>
+            <li> Muscular individuals and highly trained athletes may have
+              higher BMIs due to their substantial muscle mass.</li></p>
+        </ul>
+
+        <p>Similar limitations apply to BMI calculations for children and
+          adolescents. Factors like height and sexual maturation can influence
+          BMI and body fat in this population. BMI is a better indicator of
+          excess body fat for obese children, while for overweight children,
+          their BMI could be influenced by increased levels of fat or fat-free
+          mass (including water, organs, muscle, etc.). In thin children, the
+          difference in BMI can also be attributed to fat-free mass.</p>
+
+        <p>However, it's worth noting that BMI is reasonably indicative of body
+          fat for approximately 90-95% of the population and can be used in
+          conjunction with other measures to determine a person's healthy body
+          weight effectively.</p>
+      </p>
+    </div>
+    <!--=======================================================-->
+    <div class="notes">
+      <h3>BMI formula</h3>
       <p>
         <b>USC Units</b><br><br>
-        In simple terms, the formula for calculating BMI in USC units using pounds (lbs) and inches (in) is:<br><br>
+        In simple terms, the formula for calculating BMI in USC units using
+        pounds (lbs) and inches (in) is:<br><br>
 
         BMI = (weight in lbs) * 703 / (height in inches)^2<br><br>
-        
-        You can calculate the BMI by multiplying the weight in pounds by 703 and then dividing that by the square of the height in inches.<br><br>
+
+        You can calculate the BMI by multiplying the weight in pounds by 703 and
+        then dividing that by the square of the height in inches.<br><br>
 
         <b>SI, Metric Units</b><br><br>
 
-        In simple terms, the BMI formula using metric units can be expressed as:<br><br>
+        In simple terms, the BMI formula using metric units can be expressed
+        as:<br><br>
 
-BMI = (mass in kg) / (height in meters)^2<br><br>
+        BMI = (mass in kg) / (height in meters)^2<br><br>
 
-Let's use an example where the person's weight is 72.57 kg and their height is 1.782 meters. Plugging these values into the formula, we can calculate their BMI:<br><br>
+        Let's use an example where the person's weight is 72.57 kg and their
+        height is 1.782 meters. Plugging these values into the formula, we can
+        calculate their BMI:<br><br>
 
-BMI = 72.57 / (1.782^2)
-= 72.57 / 3.174
-= 22.90
+        BMI = 72.57 / (1.782^2)
+        = 72.57 / 3.174
+        = 22.90
 
-Therefore, the BMI for a person weighing 72.57 kg and measuring 1.782 meters in height is approximately 22.90 kg/m².
+        Therefore, the BMI for a person weighing 72.57 kg and measuring 1.782
+        meters in height is approximately 22.90 kg/m².
       </p>
     </div>
-    </div>
+    </main>
 
-    <!--Footer2-->
-<section class="footer2">
+    <!--=======================================================-->
+    <div>
+    <!--Back to top btn-->
+    <button class="top" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!--Back to top btn end-->
+  </div>
+    <!--=======================================================-->
 
-  <p>All Rights Reserved &copy; <span id="currentYear"></span> <a href="https://jo-erl.github.io/joelanangportfolio/" style="color: rgb(0, 255, 68);" target="_blank">JoErl</a></p>
+    <!--=======================================================-->
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="logo">
+          <a href="#">Joel Anang<span>.</span></a>
+        </div>
+        <p class="copyright">
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          All rights reserved
+        </p>
+      </div>
+    </footer>
+    <!--Footer end-->
+    <!--=======================================================-->
 
-  <script>
-    // JavaScript to automatically update the year
-    document.getElementById("currentYear").textContent = new Date().getFullYear();
-  </script>
-</section>
-<!--End of Footer-->
+    <script>
+    //===========================================================//
+      // Back to top button functionality
+      var backToTopButton = document.getElementById("myBtn");
 
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      }
+
+      backToTopButton.addEventListener("click", function () {
+        if ("scrollBehavior" in document.documentElement.style) {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        } else {
+          // Fallback for browsers that don't support smooth scrolling
+          const currentPosition =
+            document.documentElement.scrollTop || document.body.scrollTop;
+          if (currentPosition > 0) {
+            window.requestAnimationFrame(topFunction);
+          }
+        }
+      });
+      //===========================================================//
+    </script>
+    <script>
+      //=======================================================//
+      // Footer functionality
+      const footer = document.querySelector("footer");
+      const currentYearSpan = document.querySelector(".current-year");
+
+      // Set the current year in the footer
+      if (currentYearSpan) {
+        currentYearSpan.textContent = new Date().getFullYear();
+      }
+
+      function handleScroll() {
+        // Footer reveal animation
+        const footerRect = footer.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        if (footerRect.bottom <= windowHeight + 100) {
+          footer.classList.add("reveal");
+        } else {
+          footer.classList.remove("reveal");
+        }
+
+        // Footer parallax effect
+        const scrollPosition = window.pageYOffset;
+        const parallaxOffset = scrollPosition * 0.3;
+        footer.style.backgroundPositionY = `${parallaxOffset}px`;
+      }
+
+      window.addEventListener("scroll", handleScroll);
+      handleScroll();
+    </script>
   </body>
 </html>
