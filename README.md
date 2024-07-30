@@ -1,5 +1,5 @@
 # Body Mass Index Calculator
+A simple BMI calculator 
+<a href="https://jo-erl.github.io/BMIcalculator/">Demo Link</a><br><br>
 
-<a href="jo-erl.github.io/BMIcalculator/">Demo Link</a><br><br>
 
-![17](https://github.com/Jo-erl/3dcarousel/assets/133300552/b0772bf3-5c2d-4056-88e4-ab3af23e84a4)
